@@ -14,7 +14,6 @@ I would appreciate it if you could give more advice.
 # technique report 
 
 ## Public Case Score Report
-
 | #name  | #Hop   | #time    |
 |--------|--------|----------|
 | Case01 | 12     | 0.00354529 |
@@ -29,36 +28,56 @@ I would appreciate it if you could give more advice.
 | Case03 | 18877   | 56.9944    | 1.27       |
 | Case04 | 840357  | 651.164    | 1.14       |
 
+##     Hidden Case score report 
+
+| info_type | runtime(s) | hop length | score  | rank score |
+| ------------ | --------- | ---------- | ---------- | ---------- |
+|  case1     | 0     | 12      | 12   | 14       |
+|  case2     | 0.0        | 3127.0     | 3127.0 | 17.0       |
+|  case3     | 66.0       | 14850.0    | 14904.0 | 14.0       |
+|  case4     | 610.0      | 739974.0   | 765051.0 | 9.0        |
+|  case5     | 0.0        | 1261.0     | 1261.0 | 8.0        |
+|  case6     | 1.0        | 1442.0     | 1442.0 | 6.0        |
+|  case7     | 28.0       | 29750.0    | 29796.0 | 9.0        |
+|  case8     | 50.0       | 26702.0    | 26776.0 | 9.0        |
+|  case10    | 740.0      | 672951.0   | 700617.0 | 10.0       |
+
 # How to get all the case
 If u want to download all the case(about 10),please see the Case download information.pdf.
 
-## English report
-Algorithm Introduction
-Flowchart:
+# English report
+## Algorithm Introduction
 
-Core Algorithm:
+### Flowchart:
+
+#### Core Algorithm
 This algorithm is a modification based on the work of Mapart.
 
-Initial Partitioning: Simultaneously considers the remaining FPGA space and the hop count growth of the entire graph during partitioning.
-Handling Unplaced Nodes: After initial partitioning, uses refine_CV and force_CV to attempt placing nodes that failed to be partitioned.
-Hybrid Optimization: Integrates both node replication and node movement strategies during refinement to ensure consistency, achieving optimization improvements ranging from 3% (Case 02) to 30% (Case 03).
+#### Initial Partitioning
+Simultaneously considers the remaining FPGA space and the hop count growth of the entire graph during partitioning.
 
-Innovations:
+#### Handling Unplaced Nodes
+After initial partitioning, uses `refine_CV` and `force_CV` to attempt placing nodes that failed to be partitioned.
 
-Multi-Level Refinement Framework:
-Addresses limitations in Mapart's refinement phase, which relies on the Fiducia-Mattheyses (FM) algorithm. Experiments showed that refining other nodes while handling violations incrementally could lead to incomplete partitioning, high computational costs, and degraded results.
-Proposed refine_CV and force_CV algorithms based on a multi-level framework to efficiently resolve violations for nodes with varying resource requirements, ensuring legality and minimizing negative impacts on final results.
-Hybrid Node Movement Algorithm:
-Inspired by the FM algorithm, this approach combines node movement and replication strategies to maintain consistency.
-Demonstrates significant improvements in certain scenarios, particularly when initial partitioning is less constrained.
-Space Evaluation Function:
-Introduces a new spaceFunction to assess the quality of remaining FPGA space, considering the spatial overhead of logic replication.
+#### Hybrid Optimization
+Integrates both node replication and node movement strategies during refinement to ensure consistency, achieving optimization improvements ranging from 3% (Case 02) to 30% (Case 03).
 
-Experiments:
+### Innovations
 
-Combining Movement and Replication in FM: Directly integrating node replication into the FM algorithm yielded suboptimal results.
+#### Multi - Level Refinement Framework
+Addresses limitations in Mapart's refinement phase, which relies on the Fiducia - Mattheyses (FM) algorithm. Experiments showed that refining other nodes while handling violations incrementally could lead to incomplete partitioning, high computational costs, and degraded results. Proposed `refine_CV` and `force_CV` algorithms based on a multi - level framework to efficiently resolve violations for nodes with varying resource requirements, ensuring legality and minimizing negative impacts on final results.
 
-## 中文介绍
+#### Hybrid Node Movement Algorithm
+Inspired by the FM algorithm, this approach combines node movement and replication strategies to maintain consistency. Demonstrates significant improvements in certain scenarios, particularly when initial partitioning is less constrained.
+
+#### Space Evaluation Function
+Introduces a new `spaceFunction` to assess the quality of remaining FPGA space, considering the spatial overhead of logic replication.
+
+### Experiments
+#### Combining Movement and Replication in FM
+Directly integrating node replication into the FM algorithm yielded suboptimal results.
+
+# 中文介绍
 算法介绍
 流程图:
 
