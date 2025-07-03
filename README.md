@@ -1,4 +1,4 @@
-# Topopart-
+# Topopart+
 It's my implementation topopart+ with 2024EDAcompetition with http://eda.icisc.cn/
 
 The project is modified based on BWbwchen's TopoPart,But I don`t know how to use Github to show its relationship with his project.
