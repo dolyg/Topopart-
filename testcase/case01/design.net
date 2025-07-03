@@ -1,0 +1,13 @@
+g1 3 g2
+g2 1 g4 g5
+g3 1 g4 g5 g8
+g4 2 g9 g10
+g6 1 g2 g3 g4 g7
+g8 1 g6 g10
+g9 1 g1
+g9 1 g2
+g9 1 g12
+g11 1 g5 g6 g9
+g12 2 g5 g7 g9 g10 g14 g15
+g13 1 g3 g16
+g15 1 g16
