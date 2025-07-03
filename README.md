@@ -29,6 +29,9 @@ I would appreciate it if you could give more advice.
 | Case03 | 18877   | 56.9944    | 1.27       |
 | Case04 | 840357  | 651.164    | 1.14       |
 
+# How to get all the case
+If u want to download all the case(about 10),please see the Case download information.pdf.
+
 ## English report
 Algorithm Introduction
 Flowchart:
