@@ -1,10 +1,12 @@
+#浣跨敤
 
-进度:
+Cmake
 
-数据已经读入
+make -j8
 
-需求:
+鍗冲彲缂栬瘧鎴愬姛锛屼簩杩涘埗鏂囦欢涓簆artitionor
 
-修改capacity,修改net的权重的存取
+浣跨敤鍛戒护鍙傝�價un_cmd.sh
 
-getchar加速读取
+##warning
+濡傛灉cmake鏈夐棶棰橈紝鍒犻櫎cmake缂撳瓨鍙繚鐣機makelist
