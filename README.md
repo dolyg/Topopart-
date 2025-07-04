@@ -1,15 +1,26 @@
 # Topopart+
-It's my implementation topopart+ with 2024EDAcompetition with http://eda.icisc.cn/
+I'm excited to share my implementation of TopoPart+, which was developed for the 2024 EDA Competition (http://eda.icisc.cn/). 
 
-The project is modified based on BWbwchen's TopoPart,But I don`t know how to use Github to show its relationship with his project.
+This project builds upon the original TopoPart framework created by BWbwchen, and I've made significant enhancements to improve partitioning efficiency and legality.
 
-The project is a demo,in my project you can see how I implement the topopart+
+## Key Features:
 
-And the project also show my mind that how I ensure the partition is legally valid,u can see the refine_CV() and Force_CV() to understand my ideas.
+Enhanced Algorithm: Implemented TopoPart+ with optimizations for better performance.
 
-And i am a beginner and i don`t know how to use github professionally.
+Legality Assurance: Introduced refine_CV() and force_CV() functions to ensure partition validity.
 
-I would appreciate it if you could give more advice.
+Demo Showcase: The repository includes a working demo that illustrates my approach.
+
+## As a Beginner:
+
+I'm new to professional GitHub usage, so I'd greatly appreciate any advice on:
+
+Best practices for structuring a derivative project.
+
+How to properly document contributions and dependencies.
+
+Any recommendations to make my code more accessible and collaborative.
+
 
 # technique report 
 
